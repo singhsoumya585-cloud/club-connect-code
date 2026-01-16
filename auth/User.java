@@ -1,14 +1,20 @@
+package auth;
+
 public class User {
-    private String userId;
+    private String id;
     private String username;
-    private String password;
+    private String email;
     private boolean isAdmin;
 
-    public User(String userId, String username, String password, boolean isAdmin) {
-        this.userId = userId;
+    public User(String id, String username, String email, boolean isAdmin) {
+        this.id = id;
         this.username = username;
-        this.password = password;
+        this.email = email;
         this.isAdmin = isAdmin;
+    }
+
+    public String getId() {
+        return id;
     }
 
     public String getUsername() {
@@ -19,4 +25,3 @@ public class User {
         return isAdmin;
     }
 }
-
